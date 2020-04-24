@@ -70,7 +70,7 @@ class Ui_SnapshotHistoryForm(object):
         self.verticalLayout.setStretch(1, 1)
 
         self.retranslateUi(SnapshotHistoryForm)
-        QtCore.QObject.connect(self.close_btn, QtCore.SIGNAL("clicked()"), SnapshotHistoryForm.close)
+        self.close_btn.clicked.connect(SnapshotHistoryForm.close)
         QtCore.QMetaObject.connectSlotsByName(SnapshotHistoryForm)
 
     def retranslateUi(self, SnapshotHistoryForm):
